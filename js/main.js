@@ -1,31 +1,32 @@
-//Fullpage.js
 $(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['1', '2', '3','4'],
-				sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
-				slidesNavigation: true,
-				scrollingSpeed:600,
-				continuousVertical: true,
-			});
-		});
+	//Fullpage.js
+	$('#fullpage').fullpage({
+		anchors: ['1', '2', '3','4'],
+		sectionsColor: ['#8FB98B',"#2c3e50",'#DE564B',"#2c3e50"],
+		slidesNavigation: true,
+		scrollingSpeed:600,
+		continuousVertical: true,
+	});
 
-//Typed.js
-$(function(){
-			$("#typed").typed({
-				stringsElement: $('#typed-strings'),
-				contentType:"html",
-				typeSpeed:20,
-				startDelay: 50,
-				backSpeed: 50,
-				backDelay: 1500,
-				showCursor:true,
-				loop:true
-			})
-		});
+	//Typed.js
+	$("#typed").typed({
+		stringsElement: $('#typed-strings'),
+		contentType:"html",
+		typeSpeed:20,
+		startDelay: 50,
+		backSpeed: 50,
+		backDelay: 1500,
+		showCursor:true,
+		loop:true
+	})
 
-// Story interactivities
-$(function(){
-	$("#switch0").click(function(){
+	//loader
+    $('#loader').delay(900).fadeOut(800);
+    $('#loader-inside').delay(600).fadeOut(300);
+    $("#fullpage").show();
+
+    // Story toggle
+    $("#switch0").click(function(){
 		$("#photo0").toggleClass('hidden');
 	});
 	$("#switch1").click(function(){
@@ -46,4 +47,6 @@ $(function(){
 	$("#switch6").click(function(){
 		$("#photo6").toggleClass('hidden');
 	});
-});	
+	   			
+});
+	

@@ -49,7 +49,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
     #loader {
-          display: none;
+          /*display: none;*/
           position: fixed;
           width: 100%;
           height: 100%;
@@ -60,7 +60,7 @@ abbr,acronym { border: 0;
     }
 
     #loader-inside {
-          display: none;
+          /*display: none;*/
           position: fixed;
           top: 50%;
           left: 50%;
@@ -71,6 +71,16 @@ abbr,acronym { border: 0;
           text-align: center;
           color: #2c3e50;
           z-index: 2;
+    }
+    #fullpage {
+        display: none;
+    }
+    .fp-slidesNav {
+        -webkit-transform: translateX(-50%);
+           -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+             -o-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     body {
         background: #2c3e50;

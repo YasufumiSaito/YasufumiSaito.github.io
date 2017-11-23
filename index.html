@@ -14,19 +14,7 @@
 	<meta name="twitter:creator" content="@yas104">
 	<meta name="twitter:image" content="imgs/portfolio.png">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script>
-		$(function() {
-		  var h = $(window).height();
-		  $("#fullpage").hide();
-		  $('#loader ,#loader-inside').height(h).css('display','block');
-		});
-		$(document).ready(function(){
-		  $('#loader').delay(900).fadeOut(800);
-		  $('#loader-inside').delay(600).fadeOut(300);
-		  $("#fullpage").show();
-	    });
-	</script>
+	
 	<link rel="stylesheet" type="text/css" href="css/loader.css"/>
 	<link rel="shortcut icon" href="imgs/favicon-bar-chart.ico" />
 
@@ -258,16 +246,42 @@
       		  </div>
         </div>
         <div id="credit">
-			<p>Yasufumi Saito &copy; 2016</p>
+			<p>Yasufumi Saito &copy; 2017</p>
 		</div>
 	</div>
 
 </div>
 
 	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+	<script id="template" type="text/x-handlebars-template">
+	    <div class="slide" id="slide{{index}}" data-anchor="slide{{index}}">
+			<a href={{url}} target="_blank"><img class="workImg" src={{img}}></a>
+			<div class="description">
+				<h3>{{name}}</h3>
+				<br/>
+				<ol>
+					<li><p><i class="fa fa-tag fa-1x faa-spin animated-hover"></i> {{genre}}</p></li>
+					<li><p><i class="fa fa-info-circle fa-1x faa-spin animated-hover"></i> {{desc}}</p></li>
+					<li><p><i class="fa fa-code fa-1x faa-spin animated-hover"></i> {{tech}}</p></li>
+				</ol>
+			</div>
+		</div>
+	</script>
+	<script>
+	// $.getJSON("js/project.json", function(data){
+	// 	console.log(data)
+	// 	console.log(window)
+	// 	var source   = document.getElementById("template").innerHTML;
+	// 	var template = Handlebars.compile(source);
+	// 	var html = template(data);
+	// 	$('#section1').html(html);
+	// });
+	</script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Particles.js is for later version -->
 	<!-- <script type="text/javascript" src="js/particles.min.js"></script>
