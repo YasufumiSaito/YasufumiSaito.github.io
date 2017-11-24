@@ -72,21 +72,30 @@
 	"tech":"D3.js, Waypoints"
 },
 {
-	"name":"Going Nuclear",
-	"index":7,
-	"img":"http://s.wsj.net/public/resources/images/BN-QZ264_chinan_G_20161129045204.jpg",
-	"url":"http://graphics.wsj.com/china-nuclear-plant/",
-	"genre":"Interactive",
-	"desc":"A quarter century after China fired up its first nuclear reactor, the country is poised to become the world's biggest producer of nuclear power",
-	"tech":"D3.js, Waypoints"
-},
-{
 	"name":"The Risks to Australia’s Economic Miracle",
 	"index":8,
 	"img":"http://online.wsj.com/media/AUS_SOC1.jpg",
 	"url":"http://graphics.wsj.com/risks-to-australias-economic-miracle/",
 	"genre":"Interactive",
-	"desc":"Australia is enjoying the longest economic expansion in the developed world—25 years and counting.",
+	"desc":"Australia is enjoying the longest economic expansion in the developed world—25 years and counting",
 	"tech":"D3.js, Waypoints"
 },
+{
+	"name":"Municipal Economy in Japan",
+	"index":9,
+	"img":"imgs/map.png",
+	"url":"https://yasufumisaito.github.io/japan_map_en/",
+	"genre":"Interactive",
+	"desc":"Mapped the economic indices for 1741 municipalities",
+	"tech":"D3.js, MapboxGL.js, GeoJSON, QGIS"
+},
+{
+	"name":"How Japanese spent money?",
+	"index":10,
+	"img":"imgs/consumption.png",
+	"url":"https://yasufumisaito.github.io/heatmap/",
+	"genre":"Interactive",
+	"desc":"Illustrated how personal consumption changed over the past 35 years",
+	"tech":"D3.js, jQuery"
+}
 ]
