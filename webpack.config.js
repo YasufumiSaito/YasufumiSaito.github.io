@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const cssPath = './css/style.css';
+const cssPath = '../css/style.css';
 
 module.exports = {
   entry: './src/js/index.js',
@@ -9,7 +9,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-  	port:8000
+  	port:8000,
+    compress:true,
+    watchContentBase:true
   },
   module: {
     rules: [
