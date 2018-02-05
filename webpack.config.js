@@ -1,15 +1,14 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const cssPath = '../css/style.css';
+const cssPath = './css/style.css';
 
 module.exports = {
   entry: './src/js/index.js',
   output: {
-    path: `${__dirname}/build/js/`,
+    path: `${__dirname}/js/`,
     filename: 'bundle.js'
   },
   devServer: {
-  	contentBase: 'build',
   	port:8000
   },
   module: {
