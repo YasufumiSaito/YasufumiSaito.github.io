@@ -1,9 +1,12 @@
 export default function() {
-	$.getJSON("../data/project.json", function(data){
-		// project rendering by handlebar	
-		var source   = document.getElementById("template").innerHTML;
-		var template = Handlebars.compile(source);	
-		var html = template(data);
-		$('#section1').html(html);
-	});
+	fetch("../data/project.json")
+		.then((res) => res.json())
+		.then((data) => {
+			// project rendering by handlebar	
+			const source   = document.getElementById("template").innerHTML;
+			const section  = document.getElementById("section1"); 
+			const template = Handlebars.compile(source);	
+			const html = template(data);
+			section.innerHTML = html;
+		});
 }

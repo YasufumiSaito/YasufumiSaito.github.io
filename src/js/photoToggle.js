@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export default function () {
 	// Story toggle
     $("#switch0").click(function(){

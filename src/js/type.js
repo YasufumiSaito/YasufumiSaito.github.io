@@ -1,13 +1,18 @@
+import $ from 'jquery';
+import Typed from 'typed.js';
+
 export default function() {
 	//Typed.js
-	$("#typed").typed({
-		stringsElement: $('#typed-strings'),
+
+	const options = {
+		stringsElement: '#typed-strings',
 		contentType:"html",
-		typeSpeed:20,
-		startDelay: 50,
-		backSpeed: 50,
+		typeSpeed:100,
+		startDelay: 100,
+		backSpeed: 100,
 		backDelay: 1500,
 		showCursor:true,
 		loop:true
-	});
+	}
+	const typed = new Typed ('#typed', options);
 }
