@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "watch": "webpack --progress --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

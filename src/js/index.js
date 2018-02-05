@@ -6,13 +6,12 @@ import type from './type'
 import loader from './loader'
 import photoToggle from './photoToggle'
 
-$(document).ready(function() {
-	
+document.addEventListener("DOMContentLoaded", () => {
 	showProject();
 	// fullpage();
 	type();
 	loader();
-	photoToggle();
-	   			
+	photoToggle();  
 });
+
 	
