@@ -4,7 +4,7 @@ export default function() {
 		.then((data) => {
 			// project rendering by handlebar	
 			const source   = document.getElementById("template").innerHTML;
-			const section  = document.getElementById("section1"); 
+			const section  = document.getElementById("works"); 
 			const template = Handlebars.compile(source);	
 			const html = template(data);
 			section.innerHTML = html;

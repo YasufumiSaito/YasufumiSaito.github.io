@@ -1,8 +1,8 @@
 .typed-cursor{
-opacity: 1;
--webkit-animation: blink 0.7s infinite;
--moz-animation: blink 0.7s infinite;
-animation: blink 0.7s infinite;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -26,6 +26,9 @@ animation: blink 0.7s infinite;
     margin:0 auto;
     color: #fff;
 }
-strong {
-    color:#3349eb;
+#header {
+    strong {
+        color:#3349eb;
+        font-weight:600;
+    }
 }

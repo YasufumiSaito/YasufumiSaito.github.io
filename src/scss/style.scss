@@ -3,72 +3,123 @@
 @import 'loader';
 @import 'typed';
 
-/* Custom CSS
-* --------------------------------------- */
+/* my style here */
 
-#fullpage {
-    display: none;
-}
-.wrapper {
-    width:45%;
-    margin:0 auto;
-}
-.wrapper img {
-    width:100%;
-}
-.description {
-    background:rgba(0,0,0,0.3);
-    padding: 15px;  
-}
-.desc {
-    margin-bottom:10px;
-    color:#bfbfbf;
-}
-.tech {
-    color:#999;
-}
 body {
     background: #2c3e50;
     font-family: "Roboto", helvetica;
 }
-h1{
-    font-size: 5.5em;   
-    font-weight: 900;
-    color: #fff;
-    margin:0;
+
+main {
+    display: none;
 }
+
+.section{
+    .wrapper {
+        max-width:960px;
+        margin: 0 auto;
+    }   
+}
+
+#header {
+    background: #EB3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: left;
+    width:100vw;
+    height:100vh;
+    transition:height 999999999s;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    h1{
+        font-size: 5em;   
+        font-weight: 900;
+        color: #fff;
+        margin:0;
+    }
+    h2 {
+        font-size:2em;
+        font-family: "Roboto", helvetica;
+        font-weight: 100;
+        color: #fff;
+        text-align: left;
+    }    
+}
+
+#works {
+    
+    .wrapper {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:flex-end;
+        justify-content: flex-start;
+        .project {
+            width:30.333%;
+            margin: 1.5% 1.5%;
+            height:350px;
+            background:rgba(0,0,0,0.1);
+            img {
+                width:100%;
+            }
+            .description {
+                // background:rgba(0,0,0,0.3);
+                padding: 10px;  
+            }
+            .desc {
+                margin-bottom:10px;
+                color:#bfbfbf;
+            }
+            .tech {
+                color:#999;
+            }
+        }
+        h2 {
+            width:100%;
+            text-align:center;
+        }
+    }
+}
+
+
+
+#about {
+    background: #EB3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 h2 {
-    font-size:4em;
-    font-family: "Roboto", helvetica;
-    font-weight: 100;
-    margin:0 auto;
-    color: #fff;
-    width:80%;
-    text-align: left;
-
-}
-h3 {
-    font-size:1.75em;
+    font-size:3em;
     font-family: "Roboto", helvetica;
     font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+h3 {
+    font-size:1.1em;
+    font-family: "Roboto", helvetica;
+    font-weight: 500;
     margin:0;
-    width:100%;
+    // margin:0;
+    // width:100%;
     text-align: left;
     color:#fff;
 }
 .section2 h3 {
     text-align: center;
-    margin:0 auto;
 } 
 
 p {
     font-family: "Roboto", helvetica;
     font-weight: 100;
-    font-size: 1.25em;
+    font-size: 1.1em;
+    line-height:1.457;
     color: #fff;
     text-align: left;
-    margin:0 auto;
 }
 
 #slide12 h3 {
@@ -82,42 +133,14 @@ p {
 
 /* Centered texts in each section
 * --------------------------------------- */
-.section{
-    text-align:center;
-}
-
-
-/* Overwriting styles for the navigation dots (to place it where we want)
-* --------------------------------------- */
-.fp-slidesNav.bottom{
-    bottom: 25px;
-    color:#fff;
-}
 
 
 
-/*.workImg:hover {
-    opacity:.7;
-    -webkit-transition: all .3s ease-in-out;
-       -moz-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-         -o-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-}*/
 
-#section0 {
-    background: #EB3349; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: left;
-    padding-left: 5%;
-}
 
-#section2 {
-    background: #02AAB0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
-}
+
+
+
 
 
 
@@ -131,12 +154,9 @@ h3 span {
 
 #credit {
     font-family: helvetica;
-    position:absolute;
-    bottom:25px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;   
+    // position:absolute;
+    // bottom:25px;
+    margin: 0 auto;   
     color:white;    
     z-index:1;
     font-size: 0.8em;
@@ -198,10 +218,10 @@ canvas {
 
 
 @media screen and (max-device-width: 769px) {
-    .wrapper {
+    .project {
         width:80%;
     }
-    .wrapper h3{
+    .project h3{
         font-size: 2.8em;
     }
     .description p {

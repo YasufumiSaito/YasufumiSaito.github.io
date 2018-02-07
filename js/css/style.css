@@ -609,10 +609,35 @@ template {
 strong {
   color: #3349eb; }
 
-/* Custom CSS
-* --------------------------------------- */
-#fullpage {
+/* my style here */
+body {
+  background: #2c3e50;
+  font-family: "Roboto", helvetica; }
+
+main {
   display: none; }
+
+#header {
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EB3349, #F45C43);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EB3349, #F45C43);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  transition: all 999999999s; }
+  #header .text-wrapper {
+    padding: 0 5%; }
+
+#section2 {
+  background: #02AAB0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #02AAB0, #00CDAC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #02AAB0, #00CDAC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .wrapper {
   width: 45%;
@@ -631,10 +656,6 @@ strong {
 
 .tech {
   color: #999; }
-
-body {
-  background: #2c3e50;
-  font-family: "Roboto", helvetica; }
 
 h1 {
   font-size: 5.5em;
@@ -682,9 +703,6 @@ p {
 
 /* Centered texts in each section
 * --------------------------------------- */
-.section {
-  text-align: center; }
-
 /* Overwriting styles for the navigation dots (to place it where we want)
 * --------------------------------------- */
 .fp-slidesNav.bottom {
@@ -699,24 +717,6 @@ p {
          -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 }*/
-#section0 {
-  background: #EB3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EB3349, #F45C43);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EB3349, #F45C43);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: left;
-  padding-left: 5%; }
-
-#section2 {
-  background: #02AAB0;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #02AAB0, #00CDAC);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #02AAB0, #00CDAC);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
 .fa {
   color: #EB3349;
   margin-top: 5px 3px 0 3px; }
@@ -726,12 +726,7 @@ h3 span {
 
 #credit {
   font-family: helvetica;
-  position: absolute;
-  bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  margin: 0 auto;
   color: white;
   z-index: 1;
   font-size: 0.8em; }
