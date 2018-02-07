@@ -658,16 +658,37 @@ main {
     width: 30.333%;
     margin: 1.5% 1.5%;
     height: 350px;
-    background: rgba(0, 0, 0, 0.1); }
-    #works .wrapper .project img {
-      width: 100%; }
+    background: rgba(0, 0, 0, 0.25);
+    overflow: hidden; }
+    #works .wrapper .project .photo-wrapper {
+      position: relative; }
+      #works .wrapper .project .photo-wrapper .desc {
+        position: absolute;
+        top: -200px;
+        left: 10px;
+        padding-right: 10px;
+        color: #fff;
+        opacity: 0;
+        transition: all 0.4s ease-in-out; }
+      #works .wrapper .project .photo-wrapper img {
+        width: 100%;
+        position: relative;
+        transition: all 0.4s ease-in-out; }
     #works .wrapper .project .description {
       padding: 10px; }
-    #works .wrapper .project .desc {
-      margin-bottom: 10px;
-      color: #bfbfbf; }
+      #works .wrapper .project .description a {
+        text-decoration: none; }
     #works .wrapper .project .tech {
       color: #999; }
+  #works .wrapper .project:hover .photo-wrapper {
+    background-color: #000; }
+  #works .wrapper .project:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.3; }
+  #works .wrapper .project:hover .desc {
+    top: 0;
+    opacity: 1; }
   #works .wrapper h2 {
     width: 100%;
     text-align: center; }
