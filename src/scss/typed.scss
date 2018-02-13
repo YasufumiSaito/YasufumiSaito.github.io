@@ -25,6 +25,9 @@
     font-weight: 100;
     margin:0 auto;
     color: #fff;
+    @include breakpoints ('mobile') {
+        font-size:1.3em;
+    }
 }
 #header {
     strong {

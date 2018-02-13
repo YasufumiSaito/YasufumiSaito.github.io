@@ -605,22 +605,27 @@ template {
   font-weight: 100;
   margin: 0 auto;
   color: #fff; }
+  @media screen and (max-width: 599px) {
+    #typed, .typed-cursor {
+      font-size: 1.3em; } }
 
 #header strong {
   color: #3349eb;
   font-weight: 600; }
 
 /* my style here */
-body {
+html, body {
   background: #2c3e50;
-  font-family: "Roboto", helvetica; }
+  font-family: "Roboto", helvetica;
+  height: 100%; }
 
 main {
   display: none; }
 
 .section .wrapper {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 #header {
   background: #EB3349;
@@ -631,67 +636,88 @@ main {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: left;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   transition: height 999999999s;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-attachment: fixed;
+  z-index: -5; }
+  #header .wrapper {
+    max-width: 100%;
+    margin: 0 0 0 5%; }
   #header h1 {
     font-size: 5em;
     font-weight: 900;
     color: #fff;
     margin: 0; }
+    @media screen and (max-width: 599px) {
+      #header h1 {
+        font-size: 2em; } }
   #header h2 {
     font-size: 2em;
     font-family: "Roboto", helvetica;
     font-weight: 100;
     color: #fff;
     text-align: left; }
+    @media screen and (max-width: 599px) {
+      #header h2 {
+        font-size: 1.3em; } }
 
-#works .wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-start; }
-  #works .wrapper .project {
-    width: 30.333%;
-    margin: 1.5% 1.5%;
-    height: 350px;
-    background: rgba(0, 0, 0, 0.25);
-    overflow: hidden; }
-    #works .wrapper .project .photo-wrapper {
-      position: relative; }
-      #works .wrapper .project .photo-wrapper .desc {
-        position: absolute;
-        top: -200px;
-        left: 10px;
-        padding-right: 10px;
-        color: #fff;
-        opacity: 0;
-        transition: all 0.4s ease-in-out; }
-      #works .wrapper .project .photo-wrapper img {
-        width: 100%;
-        position: relative;
-        transition: all 0.4s ease-in-out; }
-    #works .wrapper .project .description {
-      padding: 10px; }
-      #works .wrapper .project .description a {
-        text-decoration: none; }
-    #works .wrapper .project .tech {
-      color: #999; }
-  #works .wrapper .project:hover .photo-wrapper {
-    background-color: #000; }
-  #works .wrapper .project:hover img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.3; }
-  #works .wrapper .project:hover .desc {
-    top: 0;
-    opacity: 1; }
-  #works .wrapper h2 {
-    width: 100%;
-    text-align: center; }
+#works {
+  z-index: 0;
+  background: #2c3e50;
+  position: relative; }
+  #works .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start; }
+    #works .wrapper .project {
+      width: 30.333%;
+      margin: 1.5% 1.5%;
+      height: 320px;
+      background: rgba(0, 0, 0, 0.25);
+      overflow: hidden; }
+      @media screen and (max-width: 599px) {
+        #works .wrapper .project {
+          width: 100%;
+          margin: 20px 15px; } }
+      #works .wrapper .project .photo-wrapper {
+        position: relative; }
+        #works .wrapper .project .photo-wrapper .desc {
+          position: absolute;
+          top: -200px;
+          left: 10px;
+          padding-right: 10px;
+          color: #fff;
+          opacity: 0;
+          transition: all 0.3s ease-in-out; }
+        #works .wrapper .project .photo-wrapper img {
+          width: 100%;
+          margin: 0;
+          vertical-align: bottom;
+          position: relative;
+          transition: all 0.3s ease-in-out; }
+      #works .wrapper .project .description {
+        padding: 10px; }
+        #works .wrapper .project .description a {
+          text-decoration: none; }
+      #works .wrapper .project .tech {
+        color: #999; }
+    #works .wrapper .project:hover .photo-wrapper {
+      background-color: #000; }
+    #works .wrapper .project:hover img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: 0.3; }
+    #works .wrapper .project:hover .desc {
+      top: 0;
+      opacity: 1; }
+    #works .wrapper h2 {
+      width: 100%;
+      text-align: center; }
 
 #about {
   background: #EB3349;
@@ -794,15 +820,5 @@ canvas {
   display: block;
   vertical-align: center;
   height: 100%; }
-
-@media screen and (max-device-width: 769px) {
-  .project {
-    width: 80%; }
-  .project h3 {
-    font-size: 2.8em; }
-  .description p {
-    font-size: 1.8em; }
-  .story img {
-    width: 80%; } }
 
 /*# sourceMappingURL=style.css.map*/

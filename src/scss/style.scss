@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,900");
 @import 'normalize';
+@import 'breakpoints';
 @import 'loader';
 @import 'typed';
 
 /* my style here */
 
-body {
+html,body {
     background: #2c3e50;
     font-family: "Roboto", helvetica;
+    height: 100%;
 }
 
 main {
     display: none;
+   
 }
 
 .section{
     .wrapper {
         max-width:960px;
         margin: 0 auto;
+        position:relative;
     }   
 }
 
@@ -27,17 +31,25 @@ main {
     background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: left;
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     transition:height 999999999s;
     display:flex;
     flex-direction:column;
     justify-content:center;
-
+    background-attachment: fixed;
+    z-index:-5;
+    .wrapper {
+        max-width:100%;
+        margin: 0 0 0 5%;
+    }
     h1{
         font-size: 5em;   
         font-weight: 900;
         color: #fff;
         margin:0;
+        @include breakpoints ('mobile') {
+            font-size:2em;
+        }
     }
     h2 {
         font-size:2em;
@@ -45,11 +57,16 @@ main {
         font-weight: 100;
         color: #fff;
         text-align: left;
+        @include breakpoints ('mobile') {
+            font-size:1.3em
+        }
     }    
 }
 
 #works {
-    
+    z-index:0;
+    background: #2c3e50;
+    position:relative;
     .wrapper {
         display:flex;
         flex-direction:row;
@@ -59,9 +76,13 @@ main {
         .project {
             width:30.333%;
             margin: 1.5% 1.5%;
-            height:350px;
+            height:320px;
             background:rgba(0,0,0,0.25);
             overflow:hidden;
+            @include breakpoints ('mobile') {
+                width:100%;
+                margin: 20px 15px;
+            }
             
             .photo-wrapper {
                 
@@ -75,12 +96,14 @@ main {
                     padding-right:10px;
                     color:#fff;
                     opacity:0;
-                    transition: all 0.4s ease-in-out; 
+                    transition: all 0.3s ease-in-out; 
                 }
                 img {
                     width:100%;
+                    margin:0;
+                     vertical-align: bottom;
                     position:relative;
-                    transition: all 0.4s ease-in-out; 
+                    transition: all 0.3s ease-in-out; 
                 }
             }
             
@@ -246,23 +269,4 @@ canvas {
     display:block;
     vertical-align:center;
     height:100%;
-}
-
-
-@media screen and (max-device-width: 769px) {
-    .project {
-        width:80%;
-    }
-    .project h3{
-        font-size: 2.8em;
-    }
-    .description p {
-        font-size: 1.8em;
-    }
-
-    .story img {
-    width:80%;
-    }
-   
-
 }
