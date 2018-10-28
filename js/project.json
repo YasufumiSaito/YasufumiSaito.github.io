@@ -1,7 +1,25 @@
 [
 {
-	"name":"HNA: The Making of a Chinese Giant",
+	"name":"In China, a Dot-Com Déjà-Vu",
 	"index":0,
+	"img":"https://si.wsj.net/public/resources/images/B3-CA451_GOLDRU_G_20181011152007.jpg",
+	"url":"https://www.wsj.com/articles/in-china-a-dot-com-deja-vu-1539403201",
+	"genre":"Data Journalism",
+	"desc":"Welcome to the land of ‘unicorns’ and super-cheap meals. The rewards are rich, as are valuations. And the risks are rising. How it will play out depends upon whom you ask.",
+	"tech":"D3.js, R, node.js"
+},
+{
+	"name":"Silicon Valley Powered American Tech Dominance—Now It Has a Challenger",
+	"index":1,
+	"img":"https://si.wsj.net/public/resources/images/B3-AA758_201804_G_20180412163437.png",
+	"url":"https://www.wsj.com/articles/silicon-valley-long-dominated-startup-fundingnow-it-has-a-challenger-1523544804",
+	"genre":"Data Journalism",
+	"desc":"An exclusive WSJ analysis shows how venture-capital investment from Asia is skyrocketing, threatening to shift power over innovation",
+	"tech":"D3.js, ai2html, node.js"
+},
+{
+	"name":"HNA: The Making of a Chinese Giant",
+	"index":2,
 	"img":"https://s.wsj.net/public/resources/images/BN-VL703_HNA_pr_G_20171006043508.jpg",
 	"url":"https://www.wsj.com/graphics/hna-the-making-of-a-chinese-giant/",
 	"genre":"Interactive",
@@ -10,7 +28,7 @@
 },
 {
 	"name":"Beijing's Tightening Embrace",
-	"index":1,
+	"index":3,
 	"img":"https://s.wsj.net/public/resources/images/BN-UB162_HK20PR_G_20170628042845.jpg",
 	"url":"https://www.wsj.com/graphics/beijings-tightening-embrace/",
 	"genre":"Interactive",
@@ -19,7 +37,7 @@
 },
 {
 	"name":"The Threat From North Korea’s Missiles",
-	"index":2,
+	"index":4,
 	"img":"https://online.wsj.com/media/nkmissile_G.jpg",
 	"url":"https://www.wsj.com/graphics/the-threat-from-north-koreas-missiles/",
 	"genre":"Interactive",
@@ -28,7 +46,7 @@
 },
 {
 	"name":"Launch Pattern",
-	"index":3,
+	"index":5,
 	"img":"https://online.wsj.com/media/nktrajection_G.jpg",
 	"url":"https://www.wsj.com/graphics/launch-pattern/",
 	"genre":"Breaking News",
@@ -37,7 +55,7 @@
 },
 {
 	"name":"What Is SoftBank?",
-	"index":4,
+	"index":6,
 	"img":"https://s.wsj.net/public/resources/images/BN-RH501_softba_G_20161220002845.jpg",
 	"url":"https://www.wsj.com/graphics/what-is-softbank/",
 	"genre":"Interactive",
@@ -46,7 +64,7 @@
 },
 {
 	"name":"Inside the Empires of Asia’s Tycoons",
-	"index":5,
+	"index":7,
 	"img":"https://si.wsj.net/public/resources/images/OG-AJ764_201701_G_20170110044526.jpg",
 	"url":"https://www.wsj.com/graphics/inside-the-empires-of-asias-tycoons/",
 	"genre":"Interactive",
@@ -55,7 +73,7 @@
 },
 {
 	"name":"China’s Great Wall of Money",
-	"index":6,
+	"index":8,
 	"img":"https://si.wsj.net/public/resources/images/OG-AI531_cbubbl_G_20161027001426.gif",
 	"url":"https://www.wsj.com/graphics/china-bubble/",
 	"genre":"Charts",
@@ -64,7 +82,7 @@
 },
 {
 	"name":"Going Nuclear",
-	"index":7,
+	"index":9,
 	"img":"http://s.wsj.net/public/resources/images/BN-QZ264_chinan_G_20161129045204.jpg",
 	"url":"http://graphics.wsj.com/china-nuclear-plant/",
 	"genre":"Charts",
@@ -73,7 +91,7 @@
 },
 {
 	"name":"The Risks to Australia’s Economic Miracle",
-	"index":8,
+	"index":10,
 	"img":"http://online.wsj.com/media/AUS_SOC1.jpg",
 	"url":"http://graphics.wsj.com/risks-to-australias-economic-miracle/",
 	"genre":"Interactive",
@@ -82,7 +100,7 @@
 },
 {
 	"name":"Municipal Economy in Japan",
-	"index":9,
+	"index":11,
 	"img":"imgs/map.png",
 	"url":"https://yasufumisaito.github.io/japan_map_en/",
 	"genre":"Interactive",
@@ -91,7 +109,7 @@
 },
 {
 	"name":"How Japanese spent money?",
-	"index":10,
+	"index":12,
 	"img":"imgs/consumption.png",
 	"url":"https://yasufumisaito.github.io/heatmap/",
 	"genre":"Interactive",
