@@ -600,56 +600,60 @@ template {
     opacity: 1; } }
 
 #typed, .typed-cursor {
-  font-size: 3.3em;
+  font-size: 1.1em;
   font-family: "Roboto", helvetica;
   font-weight: 100;
   margin: 0 auto;
-  color: #fff; }
+  line-height: 1.42;
+  color: #999; }
   @media screen and (max-width: 599px) {
     #typed, .typed-cursor {
       font-size: 1.3em; } }
 
 #header strong {
-  color: #3349eb;
+  color: #EB3349;
   font-weight: 600; }
+
+#header .install {
+  font-size: 12px;
+  line-height: 1.2; }
 
 /* my style here */
 html, body {
   background: #2c3e50;
-  font-family: "Roboto", helvetica;
-  height: 100%; }
+  font-family: "Roboto", helvetica; }
 
 main {
-  display: none; }
+  display: none;
+  height: 100%; }
 
 .section .wrapper {
   max-width: 960px;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
 
-#header {
+.change {
   background: #EB3349;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #EB3349, #F45C43);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #EB3349, #F45C43);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  transition: 1s; }
+
+#header {
+  background: #2c3e50;
   text-align: left;
-  width: 100vw;
-  min-height: 100vh;
-  transition: height 999999999s;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-attachment: fixed;
-  z-index: -5; }
-  #header .wrapper {
-    max-width: 100%;
-    margin: 0 0 0 5%; }
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
   #header h1 {
     font-size: 5em;
     font-weight: 900;
-    color: #fff;
     margin: 0; }
     @media screen and (max-width: 599px) {
       #header h1 {
@@ -658,15 +662,21 @@ main {
     font-size: 2em;
     font-family: "Roboto", helvetica;
     font-weight: 100;
-    color: #fff;
     text-align: left; }
     @media screen and (max-width: 599px) {
       #header h2 {
         font-size: 1.3em; } }
 
+.change {
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EB3349, #F45C43) !important;
+  background: linear-gradient(to left, #EB3349, #F45C43) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff !important; }
+
 #works {
   z-index: 0;
-  background: #2c3e50;
   position: relative; }
   #works .wrapper {
     display: flex;
@@ -675,17 +685,17 @@ main {
     align-items: flex-end;
     justify-content: flex-start; }
     #works .wrapper .project {
-      width: 30.333%;
-      margin: 1.5% 1.5%;
-      height: 320px;
+      width: 100%;
       background: rgba(0, 0, 0, 0.25);
-      overflow: hidden; }
+      display: flex;
+      margin-bottom: 2em; }
       @media screen and (max-width: 599px) {
         #works .wrapper .project {
           width: 100%;
           margin: 20px 15px; } }
       #works .wrapper .project .photo-wrapper {
-        position: relative; }
+        flex: 2;
+        padding: 10px; }
         #works .wrapper .project .photo-wrapper .desc {
           position: absolute;
           top: -200px;
@@ -701,23 +711,15 @@ main {
           position: relative;
           transition: all 0.3s ease-in-out; }
       #works .wrapper .project .description {
+        flex: 1;
         padding: 10px; }
         #works .wrapper .project .description a {
           text-decoration: none; }
       #works .wrapper .project .tech {
         color: #999; }
-    #works .wrapper .project:hover .photo-wrapper {
-      background-color: #000; }
-    #works .wrapper .project:hover img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      opacity: 0.3; }
-    #works .wrapper .project:hover .desc {
-      top: 0;
-      opacity: 1; }
     #works .wrapper h2 {
       width: 100%;
-      text-align: center; }
+      text-align: left; }
 
 #about {
   background: #EB3349;
@@ -728,10 +730,10 @@ main {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.3em;
   font-family: "Roboto", helvetica;
   font-weight: 600;
-  color: #fff;
+  color: #999;
   text-align: left; }
 
 h3 {
@@ -761,38 +763,21 @@ p {
   color: #fff;
   width: 100%; }
 
-/* Centered texts in each section
-* --------------------------------------- */
 .fa {
   color: #EB3349;
   margin-top: 5px 3px 0 3px; }
 
-h3 span {
-  color: #EB3349; }
-
 #credit {
   font-family: helvetica;
-  margin: 0 auto;
+  margin-bottom: 1em;
   color: white;
   z-index: 1;
-  font-size: 0.8em; }
+  font-size: 1em; }
+  #credit p {
+    text-align: center; }
 
-#credit p {
+.social {
   text-align: center; }
-
-p a {
-  color: #EB3349; }
-
-.story h3 {
-  font-size: 2.8em;
-  text-align: left;
-  width: 80%;
-  margin: 2% auto; }
-
-.story img {
-  width: 45%;
-  border-radius: 5px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); }
 
 .hidden {
   display: none; }
@@ -811,10 +796,6 @@ figcaption {
 figure {
   margin: 0;
   padding: 0; }
-
-#storySlide8 img {
-  width: 40%;
-  box-shadow: none; }
 
 canvas {
   display: block;

@@ -20,18 +20,24 @@
     100% { opacity:1; }
 }
 #typed, .typed-cursor {
-    font-size:3.3em;
+    font-size:1.1em;
     font-family: "Roboto", helvetica;
     font-weight: 100;
     margin:0 auto;
-    color: #fff;
+    line-height:1.42;
+    color:#999;
     @include breakpoints ('mobile') {
         font-size:1.3em;
     }
 }
 #header {
     strong {
-        color:#3349eb;
+        // color:#3349eb;
+        color:#EB3349;
         font-weight:600;
+    }
+    .install {
+        font-size:12px;
+        line-height:1.2;
     }
 }

@@ -7,12 +7,14 @@ export default function() {
 	const options = {
 		stringsElement: '#typed-strings',
 		contentType:"html",
-		typeSpeed:100,
+		typeSpeed:30,
 		startDelay: 100,
-		backSpeed: 100,
-		backDelay: 1500,
 		showCursor:true,
-		loop:true
+		onComplete: function () {
+			// console.log("is calling?")
+			// const header = document.querySelector("#header");
+			// header.classList.add("change");
+		}
 	}
 	const typed = new Typed ('#typed', options);
 }

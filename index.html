@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58632402-6"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-58632402-6');
-	</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Yasufumi Saito</title>
@@ -17,11 +8,11 @@
 	<meta name="keywords"  content="Yasufumi, Saito, 斎藤康史, data, visualization, journalism, innovation, interactive, business, reporting" />
 	<meta property="og:image" content="imgs/portfolio.png" />
 	<meta property="og:title" content="Hi, my name is Yasufumi Saito" />
-	<meta name="description" content="I'm a developer journalist originated in Japan." />
+	<meta name="description" content="Visual + data journalist from Japan" />
 	<meta property="og:url" content="https://yasufumisaito.github.io/" />
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@yas104">
-	<meta name="twitter:creator" content="@yas104">
+	<meta name="twitter:site" content="@YasufumiSaito">
+	<meta name="twitter:creator" content="@YasufumiSaito">
 	<meta name="twitter:image" content="imgs/portfolio.png">
 	
 	<link rel="shortcut icon" href="imgs/favicon-bar-chart.ico" />
@@ -51,15 +42,22 @@
 	<!-- header -->
 	<section class="section" id="header">
 		<div class="wrapper">
-			<h1>Hello, my name is<br/>Yasufumi Saito.</h1>
-			<br/>
+			
+		
 
 			<div id="typed-strings">
-			    <h2>I'm a <strong>DATA JOURNALIST</strong></h2>
-			    <h2>I'm an <strong>INTERACTIVE STORYTELLER</strong></h2>
-			    <h2>I'm a <strong>WEB DESIGNER</strong></h2>
+
+				<p>
+				   Hello, I'm Yasufumi Saito. ^1000 <br>
+				   I'm a <strong>DATA JOURNALIST</strong> ^1000 and <strong>VISUAL STORYTELLER</strong>. ^1000 <br>
+				   I make visual stories and news graphics ^500 focusing on Asia, ^1000 <br>
+				   currently working for the Wall Street Journal in Hong Kong.
+				</p>
+			   
 			</div>
 			<span id="typed"></span>
+
+			
 		</div>
 	</section>
 
@@ -68,14 +66,14 @@
 	
 		<script id="template" type="text/x-handlebars-template">
 		<div class="wrapper">
-		<h2>Latest Works</h2>
+		<h2>Works</h2>
 		<!--  Generating work sample by Handlebar-->
 		{{#.}}
 		  
 		    <div class="project">
 				<div class='photo-wrapper'>
 					<img src={{{img}}}>
-					<div><p class="desc"> {{{desc}}}</p></div>
+					
 				</div>
 				
 				<div class="description">
@@ -83,7 +81,7 @@
 						<h3>{{{name}}}</h3>
 					</a>
 					<!-- <ol> -->
-						<!-- <div><p class="desc"> {{{desc}}}</p></div> -->
+						<div><p class="desc"> {{{desc}}}</p></div>
 						<div><p class="tech"><i class="fa fa-tag fa-1x faa-spin animated-hover"></i> {{{genre}}}  <i class="fa fa-code fa-1x faa-spin animated-hover"></i> {{{tech}}}</p></div>
 					<!-- </ol> -->
 				</div>
@@ -99,7 +97,7 @@
 	</section>
 
 	<!-- My Story -->
-	<section class="section" id="about">
+	<!-- <section class="section" id="about">
 	    <div class="slide" id="storySlide0" data-anchor="slide0">
 			<div class="intro">
 				<h1>About Me</h1>
@@ -166,33 +164,35 @@
 	    	</div>
 		</div>
 
-	</section>
+	</section> -->
 
 	<!-- Contact -->
-	<section class="section">
+	<section class="section social">
 		<div id="contact" class="intro">
-			<!-- <a href="imgs/Resume.pdf" target="_blank"><h1>Need Resume?</h1></a> -->
-		      <div class="social">
-		        <!-- <a href="https://www.facebook.com/yasufumi.saito.35" target="_blank"><i class="fa fa-facebook-official fa-5x faa-pulse animated-hover"></i></a> -->
-		        <a href="https://twitter.com/yasufumisaito" target="_blank"><i class="fa fa-twitter fa-5x faa-pulse animated-hover"></i></a>
-		        <a href="https://www.linkedin.com/pub/yasufumi-saito/a7/653/937" target="_blank"><i class="fa fa-linkedin-square fa-5x faa-pulse animated-hover"></i></a>
-		        <a href="https://github.com/YasufumiSaito" target="_blank"><i class="fa fa-github fa-5x faa-pulse animated-hover"></i></a>
-		        <a href="mailto:yasu@u.northwestern.edu"><i class="fa fa-envelope-square fa-5x faa-pulse animated-hover"></i></a>
+		      <div class='icons'>
+		        <a href="https://twitter.com/yasufumisaito" target="_blank"><i class="fa fa-twitter fa-3x faa-pulse animated-hover"></i></a>
+		        <a href="https://www.linkedin.com/pub/yasufumi-saito/a7/653/937" target="_blank"><i class="fa fa-linkedin-square fa-3x faa-pulse animated-hover"></i></a>
+		        <a href="https://github.com/YasufumiSaito" target="_blank"><i class="fa fa-github fa-3x faa-pulse animated-hover"></i></a>
+		        <a href="mailto:saitoyasufumi@gmail.com"><i class="fa fa-envelope-square fa-3x faa-pulse animated-hover"></i></a>
       		  </div>
         </div>
         <div id="credit">
-			<p>Yasufumi Saito &copy; 2017</p>
+			<p>Yasufumi Saito &copy; 2020</p>
 		</div>
 	</section>
 
 </main>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58632402-6"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<!-- libs -->
-<!-- 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> -->
-	
-	<!-- main script -->
+	  gtag('config', 'UA-58632402-6');
+	</script>
+	<!-- script -->
 	<script type="text/javascript" src="js/bundle.js"></script>
-	
-    
+	   
 </body>
 </html>
