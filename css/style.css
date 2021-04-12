@@ -605,8 +605,8 @@ html, body {
     right: 10px; }
   .header #contact {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    top: 32px;
+    right: 10px;
     pointer-events: all; }
 
 #intro {
@@ -617,16 +617,18 @@ html, body {
 
 #handlebar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: flex-end;
   height: 100vh;
   /* Fallback */
   height: calc(var(--vh, 1vh) * 100); }
   #handlebar .project {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -634,16 +636,17 @@ html, body {
     padding-right: 20vw; }
     @media screen and (max-width: 769px) {
       #handlebar .project {
-        flex-direction: column;
-        height: 80vh; } }
+        flex-direction: column; } }
     @media screen and (max-width: 599px) {
       #handlebar .project {
-        height: 75vh; } }
+        height: 85vh;
+        height: calc(var(--vh, 1vh) * 85); } }
     #handlebar .project .photo-wrapper {
       padding: 10px;
       text-align: center; }
       #handlebar .project .photo-wrapper img {
-        height: 80vh;
+        height: 90vh;
+        height: calc(var(--vh, 1vh) * 90);
         margin: 0;
         vertical-align: bottom;
         position: relative;
