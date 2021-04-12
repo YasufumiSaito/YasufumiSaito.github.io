@@ -1,74 +1,45 @@
 [
-{
-	"name":"Silicon Valley Powered American Tech Dominance—Now It Has a Challenger",
-	"index":0,
-	"img":"https://si.wsj.net/public/resources/images/B3-AA758_201804_M_20180412163437.png",
-	"url":"https://www.wsj.com/articles/silicon-valley-long-dominated-startup-fundingnow-it-has-a-challenger-1523544804",
-	"genre":"Data Journalism",
-	"desc":"An exclusive WSJ analysis shows how venture-capital investment from Asia is skyrocketing, threatening to shift power over innovation",
-	"tech":"D3.js, ai2html, node.js"
-},
-{
-	"name":"Berlin wall",
-	"index":1,
-	"img":"https://s.wsj.net/public/resources/images/BN-VL703_HNA_pr_G_20171006043508.jpg",
-	"url":"https://www.wsj.com/graphics/the-berlin-wall-fell-30-years-ago-where-did-it-go/",
-	"genre":"Interactive",
-	"desc":"How one of China’s most aggressive deal makers grew from a two-plane outfit in a sleepy resort town to a $178 billion global behemoth",
-	"tech":"D3.js, ai2html, Waypoints"
-},
-{
-	"name":"Beijing's Tightening Embrace",
-	"index":2,
-	"img":"https://s.wsj.net/public/resources/images/BN-UB162_HK20PR_M_20170628042845.jpg",
-	"url":"https://www.wsj.com/graphics/beijings-tightening-embrace/",
-	"genre":"Interactive",
-	"desc":"Former British colony rapidly evolves, suffers some growing pains under mainland China’s expanding influence",
-	"tech":"D3.js, jQuery"
-},
-{
-	"name":"The Threat From North Korea’s Missiles",
-	"index":3,
-	"img":"https://online.wsj.com/media/nkmissile_G.jpg",
-	"url":"https://www.wsj.com/graphics/the-threat-from-north-koreas-missiles/",
-	"genre":"Interactive",
-	"desc":"Pyongyang has accelerated its tests of missiles and nuclear bombs as it tries to develop a nuclear-armed missile that could hit the U.S. mainland",
-	"tech":"D3.js, Swiper"
-},
-{
-	"name":"Hong Kong Protest",
-	"index":4,
-	"img":"https://online.wsj.com/media/nktrajection_G.jpg",
-	"url":"https://www.wsj.com/graphics/hong-kong-protests-from-kill-the-bill-to-revolution-of-our-time/",
-	"genre":"Breaking News",
-	"desc":"Why North Korea could now threaten the U.S.",
-	"tech":"D3.js"
-},
-{
-	"name":"China Trade",
-	"index":5,
-	"img":"https://s.wsj.net/public/resources/images/BN-RH501_softba_G_20161220002845.jpg",
-	"url":"https://www.wsj.com/graphics/china-emergence-of-a-trade-leviathan/",
-	"genre":"Interactive",
-	"desc":"It is a telecommunications and internet company with investments in some of the world's hottest tech startups",
-	"tech":"D3.js, DataTables"
-},
-{
-	"name":"Hong Kong Money",
-	"index":7,
-	"img":"https://si.wsj.net/public/resources/images/OG-AI531_cbubbl_G_20161027001426.gif",
-	"url":"https://www.wsj.com/articles/all-about-the-money-why-hong-kong-matters-so-much-to-china-11571736607",
-	"genre":"Charts",
-	"desc":"Cash is fueling price spikes and volatility.",
-	"tech":"D3.js, Waypoints"
-},
-{
-	"name":"Cambodia",
-	"index":8,
-	"img":"http://s.wsj.net/public/resources/images/BN-QZ264_chinan_G_20161129045204.jpg",
-	"url":"https://www.wsj.com/articles/secret-deal-for-chinese-naval-outpost-in-cambodia-raises-u-s-fears-of-beijings-ambitions-11563732482",
-	"genre":"Charts",
-	"desc":"A quarter century after China fired up its first nuclear reactor, the country is poised to become the world's biggest producer of nuclear power",
-	"tech":"D3.js, Waypoints"
-}
+	{
+        "name":"The Places You Can't Fly To Anymore",
+        "index":1,
+        "img":"https://si.wsj.net/public/resources/images/OG-FU315_202103_8SR_20210318105844.gif",
+        "url":"https://www.wsj.com/articles/the-places-you-cant-fly-to-anymore-11616248802"
+	},
+	{
+        "name":"Inside Ant, the Company Behind the World’s Biggest IPO",
+        "index":2,
+        "img":"https://images.wsj.net/im-250188/square",
+        "url":"https://www.wsj.com/articles/inside-ant-the-company-behind-the-worlds-biggest-ipo-11603798576"
+	},
+	{
+        "name":"Japan’s Tsunami and Nuclear Disaster Unleashed a $300 Billion Effort to Rebuild a Hinterland",
+        "index":3,
+        "img":"https://images.wsj.net/im-309670",
+        "url":"https://www.wsj.com/articles/japans-tsunami-and-nuclear-disaster-unleashed-a-300-billion-effort-to-rebuild-a-hinterland-11615377375"
+	},
+	{
+        "name":"China: Emergence of a Trade Leviathan",
+        "index":4,
+        "img":"img/china_promo_small.jpg",
+        "url":"https://www.wsj.com/graphics/china-emergence-of-a-trade-leviathan/",
+        "award":"&#129353;The Society for News Design 2018 awards: bronze medal <br> &#129352;The Society of Publishers in Asia 2019 awards: Excellence in journalistic innovation, honorable mention"
+	},
+	{
+        "name":"The Berlin Wall Fell 30 Years Ago. Where Did It Go?",
+        "index":5,
+        "img":"img/berlinwall.gif",
+        "url":"https://www.wsj.com/graphics/the-berlin-wall-fell-30-years-ago-where-did-it-go/"
+	},
+    {
+        "name":"Hong Kong Protests: From Kill the Bill to the ‘Revolution of Our Time’",
+        "index":6,
+        "img":"https://images.wsj.net/im-102435",
+        "url":"https://www.wsj.com/graphics/hong-kong-protests-from-kill-the-bill-to-revolution-of-our-time/"
+	},
+        {
+                "name":"Silicon Valley Powered American Tech Dominance—Now It Has a Challenger",
+                "index":7,
+                "img":"img/vcshift_promo.jpg",
+                "url":"https://www.wsj.com/articles/silicon-valley-long-dominated-startup-fundingnow-it-has-a-challenger-1523544804"
+        }
 ]

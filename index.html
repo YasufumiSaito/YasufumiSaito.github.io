@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Yasufumi Saito</title>
 	<meta name="author" content="Yasufumi Saito" />
-	<meta name="keywords"  content="Yasufumi, Saito, 斎藤康史, data, visualization, journalism, innovation, interactive, business, reporting" />
+	<meta name="keywords"  content="Yasufumi, Saito, 斎藤康史, data, visualization, journalism, visual" />
 	<meta property="og:image" content="imgs/portfolio.png" />
 	<meta property="og:title" content="Hi, my name is Yasufumi Saito" />
-	<meta name="description" content="Visual + data journalist from Japan" />
+	<meta name="description" content="Data + Visual Journalist from Japan" />
 	<meta property="og:url" content="https://yasufumisaito.github.io/" />
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@YasufumiSaito">
@@ -36,84 +36,66 @@
 	</div>
 </div>
 
-
-<main>
+<main class="wrapper">
 
 	<!-- header -->
-	<section class="section" id="header">
-		<div class="wrapper">
-			
-		
-
-			<div id="typed-strings">
-
-				<p>
-				   Hello, I'm Yasufumi Saito. ^1000 <br>
-				   I'm a <strong>DATA JOURNALIST</strong> ^1000 and <strong>VISUAL STORYTELLER</strong>. ^1000 <br>
-				   I make visual stories and news graphics ^500 focusing on Asia, ^1000 <br>
-				   currently working for the Wall Street Journal in Hong Kong.
-				</p>
-			   
-			</div>
-			<span id="typed"></span>
-
-			
+	<div class="header">
+		<div id="names">
+			<h2>Yasufumi Saito</h2>
+			<h2>Data + Visual Journalist</h2>
 		</div>
-	</section>
-
-	<!-- Portfolio -->
-	<section class="section" id="works">
-	
-		<script id="template" type="text/x-handlebars-template">
-		<div class="wrapper">
-		<h2>Works</h2>
-		<!--  Generating work sample by Handlebar-->
-		{{#.}}
-		  
-		    <div class="project">
-				<div class='photo-wrapper'>
-					<img src={{{img}}}>
-					
+		<div id="contact" class="intro">
+			<div class='icons'>
+				<a href="https://twitter.com/yasufumisaito" target="_blank"><i class="fa fa-twitter fa-2x faa-pulse animated-hover"></i></a>
+				<a href="https://www.linkedin.com/pub/yasufumi-saito/a7/653/937" target="_blank"><i class="fa fa-linkedin-square fa-2x faa-pulse animated-hover"></i></a>
+				<a href="mailto:saitoyasufumi@gmail.com"><i class="fa fa-envelope-square fa-2x faa-pulse animated-hover"></i></a>
 				</div>
-				
+		</div>
+		<div id="nav">
+			<h2 id="nav_works">Works</h2>
+			<!-- <h2 id="nav_about">About</h2> -->
+		</div>
+	</div>
+	<!-- Portfolio -->
+	<section id="handlebar" class="work">
+		<script id="template" type="text/x-handlebars-template">
+		<!--  Generating work samples based on selected.json-->
+		{{#.}}
+			<div class="project">
+				<div class='photo-wrapper'>
+					<a href="{{{url}}}" target="_blank"><img src={{{img}}}></a>
+				</div>
 				<div class="description">
 					<a href="{{{url}}}" target="_blank">
 						<h3>{{{name}}}</h3>
 					</a>
-					<!-- <ol> -->
-						<div><p class="desc"> {{{desc}}}</p></div>
-						<div><p class="tech"><i class="fa fa-tag fa-1x faa-spin animated-hover"></i> {{{genre}}}  <i class="fa fa-code fa-1x faa-spin animated-hover"></i> {{{tech}}}</p></div>
-					<!-- </ol> -->
+					<p class="award">{{{award}}}</p>
 				</div>
-		    </div>	
-		
+			</div>	
 		{{/.}}
-		
-			<!-- <div class="wrapper">
-				<h3>Besides visual stuff, I wrote some <a href="http://www.bloomberg.com/authors/ASeC061Sqac/yasufumi-saito" target="_blank"><span class="faa-float animated">business stories</span></a> for Bloomberg, and did numerous local reporting for a Japanese daily.</h3>
-			</div> -->
-		</div>
 		</script>
-	</section>
+	</section>		
+	
+
 
 	<!-- My Story -->
 	<!-- <section class="section" id="about">
 	    <div class="slide" id="storySlide0" data-anchor="slide0">
 			<div class="intro">
-				<h1>About Me</h1>
+				<h2>About Me</h2>
 			</div>
 		</div>
 
 		<div class="slide" id="storySlide1" data-anchor="slide1">
 	    	<div class="story">
-	    		<img src='imgs/japan.jpg' id="photo0" class="hidden">
+	    		<img src='img/japan.jpg' id="photo0" class="hidden">
 	    		<h3>I'm from <strong id="switch0" class="faa-float animated">Japan</strong> and spent most of my time there until recently. live in NYC now.</h3>
 	    	</div>
 		</div>
 
 	    <div class="slide" id="storySlide2" data-anchor="slide2">
 	    	<div class="story">
-	    		<img src='imgs/desk.jpg' id="photo1" class="hidden">
+	    		<img src='img/desk.jpg' id="photo1" class="hidden">
 	    		<h3>Used to work for a Japanese local daily as a <strong id="switch1" class="faa-float animated">reporter</strong> for almost seven years.</h3>
 	    	</div>
 		</div>
@@ -122,7 +104,7 @@
 	    	<div class="story">
 	    		<h3>When the New York Times published <strong id="switch2" class="faa-float animated">"Snow Fall"</strong> in December, 2012,</h3>
 	    		<figure id="photo2" class="hidden">
-	    			<img src="imgs/snowfall.gif">
+	    			<img src="img/snowfall.gif">
 	    			<figcaption>&copy; the New York Times</figcaption>
 	    		</figure>
 	    		<h3> I decided to change my career from print to digital.</h3>
@@ -132,19 +114,19 @@
 		<div class="slide" id="storySlide4" data-anchor="slide4">
 			<div class="story">
 	    		<h3>To make the transition smooth, I went to <strong id="switch3" class="faa-float animated">Medill School of Journalism</strong> at Northwestern University.</h3>
-	 			<img id="photo3" class="hidden" src="imgs/medill.jpg">
+	 			<img id="photo3" class="hidden" src="img/medill.jpg">
 	    	</div>
 		</div>
 
 		<div class="slide" id="storySlide5" data-anchor="slide5">
 			<div class="story" id="desk">
-				<img id="photo4" class="hidden" src="imgs/web.gif" >
+				<img id="photo4" class="hidden" src="img/web.gif" >
 	    		<h3>Learned <strong id="switch4" class="faa-float animated">web skills</strong> like HTML, CSS and JavaScript.</h3>
 	    	</div>
 		</div>
 		<div class="slide" id="storySlide6" data-anchor="slide6">
 			<div class="story">
-				<img id="photo5" class="hidden" src="imgs/economy.gif">
+				<img id="photo5" class="hidden" src="img/economy.gif">
 	    		<h3>and some <strong id="switch5" class="faa-float animated">Economy</strong> stuff.</h3>
 	    	</div>
 		</div>
@@ -158,16 +140,16 @@
 
 		<div class="slide" id="storySlide8" data-anchor="slide8">
 			<div class="story">
-	    		<img id="photo6" class="hidden" src="imgs/Yasu.png">
-				<h3>Standing on a sweet spot where journalism and web technology intersect, I want to be one of those who create its future.
+	    		 <img id="photo6" class="hidden" src="img/Yasu.png"> -->
+				<!-- <h3>Standing on a sweet spot where journalism and web technology intersect, I want to be one of those who create its future.
 				</h3>
 	    	</div>
 		</div>
 
-	</section> -->
+	</section>  -->
 
 	<!-- Contact -->
-	<section class="section social">
+	<!-- <section class="section social">
 		<div id="contact" class="intro">
 		      <div class='icons'>
 		        <a href="https://twitter.com/yasufumisaito" target="_blank"><i class="fa fa-twitter fa-3x faa-pulse animated-hover"></i></a>
@@ -179,7 +161,7 @@
         <div id="credit">
 			<p>Yasufumi Saito &copy; 2020</p>
 		</div>
-	</section>
+	</section> -->
 
 </main>
 	<!-- Global site tag (gtag.js) - Google Analytics -->

@@ -396,8 +396,8 @@ template {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #2c3e50;
-  z-index: 1; }
+  background: #111;
+  z-index: 20; }
 
 #loader-inside {
   /*display: none;*/
@@ -569,199 +569,137 @@ template {
     -moz-transform: perspective(136px) rotateY(180deg);
     opacity: 0; } }
 
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
-
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-#typed, .typed-cursor {
-  font-size: 1.1em;
-  font-family: "Roboto", helvetica;
-  font-weight: 100;
-  margin: 0 auto;
-  line-height: 1.42;
-  color: #999; }
-  @media screen and (max-width: 599px) {
-    #typed, .typed-cursor {
-      font-size: 1.3em; } }
-
-#header strong {
-  color: #EB3349;
-  font-weight: 600; }
-
-#header .install {
-  font-size: 12px;
-  line-height: 1.2; }
-
 /* my style here */
 html, body {
-  background: #2c3e50;
-  font-family: "Roboto", helvetica; }
+  background: #111;
+  font-family: "Roboto", helvetica;
+  color: #999; }
 
-main {
-  display: none;
-  height: 100%; }
+.hide {
+  opacity: 0; }
 
-.section .wrapper {
-  max-width: 960px;
-  margin: 0 auto; }
+.show {
+  opacity: 1 !important;
+  position: absolute !important; }
 
-.change {
-  background: #EB3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EB3349, #F45C43);
-  background: linear-gradient(to left, #EB3349, #F45C43);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
-  transition: 1s; }
+#contact {
+  margin: 10px 0 10px 0; }
 
-#header {
-  background: #2c3e50;
-  text-align: left;
-  min-height: 20vh;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none; }
+  .header #names {
+    position: absolute;
+    top: 5px;
+    left: 10px; }
+  .header #nav {
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+  .header #contact {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    pointer-events: all; }
+
+#intro {
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative; }
-  #header h1 {
-    font-size: 5em;
-    font-weight: 900;
-    margin: 0; }
-    @media screen and (max-width: 599px) {
-      #header h1 {
-        font-size: 2em; } }
-  #header h2 {
-    font-size: 2em;
-    font-family: "Roboto", helvetica;
-    font-weight: 100;
-    text-align: left; }
-    @media screen and (max-width: 599px) {
-      #header h2 {
-        font-size: 1.3em; } }
+  justify-content: center; }
 
-.change {
-  background: #EB3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EB3349, #F45C43) !important;
-  background: linear-gradient(to left, #EB3349, #F45C43) !important;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff !important; }
-
-#works {
-  z-index: 0;
-  position: relative; }
-  #works .wrapper {
+#handlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; }
+  #handlebar .project {
+    width: 100vw;
+    height: 80vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-start; }
-    #works .wrapper .project {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.25);
-      display: flex;
-      margin-bottom: 2em; }
-      @media screen and (max-width: 599px) {
-        #works .wrapper .project {
-          width: 100%;
-          margin: 20px 15px; } }
-      #works .wrapper .project .photo-wrapper {
-        flex: 2;
-        padding: 10px; }
-        #works .wrapper .project .photo-wrapper .desc {
-          position: absolute;
-          top: -200px;
-          left: 10px;
-          padding-right: 10px;
-          color: #fff;
-          opacity: 0;
-          transition: all 0.3s ease-in-out; }
-        #works .wrapper .project .photo-wrapper img {
-          width: 100%;
-          margin: 0;
-          vertical-align: bottom;
-          position: relative;
-          transition: all 0.3s ease-in-out; }
-      #works .wrapper .project .description {
-        flex: 1;
-        padding: 10px; }
-        #works .wrapper .project .description a {
-          text-decoration: none; }
-      #works .wrapper .project .tech {
-        color: #999; }
-    #works .wrapper h2 {
-      width: 100%;
-      text-align: left; }
-
-#about {
-  background: #EB3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EB3349, #F45C43);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EB3349, #F45C43);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    padding-right: 20vw; }
+    @media screen and (max-width: 769px) {
+      #handlebar .project {
+        flex-direction: column;
+        height: 80vh; } }
+    @media screen and (max-width: 599px) {
+      #handlebar .project {
+        height: 75vh; } }
+    #handlebar .project .photo-wrapper {
+      padding: 10px;
+      text-align: center; }
+      #handlebar .project .photo-wrapper img {
+        height: 80vh;
+        margin: 0;
+        vertical-align: bottom;
+        position: relative;
+        transition: all 0.3s ease-in-out; }
+        @media screen and (max-width: 769px) {
+          #handlebar .project .photo-wrapper img {
+            width: 80vw;
+            height: auto; } }
+        @media screen and (max-width: 599px) {
+          #handlebar .project .photo-wrapper img {
+            width: 100vw; } }
+    #handlebar .project .description {
+      width: 40vw;
+      padding: 10px;
+      color: #999;
+      font-weight: 100; }
+      @media screen and (max-width: 769px) {
+        #handlebar .project .description {
+          width: 95vw;
+          margin: 0 2.5vw; } }
+      #handlebar .project .description h3 {
+        text-transform: uppercase;
+        font-size: 3em; }
+        @media screen and (max-width: 769px) {
+          #handlebar .project .description h3 {
+            font-size: 1.5em;
+            text-align: center; } }
+      #handlebar .project .description a {
+        text-decoration: none; }
+      #handlebar .project .description p.award {
+        font-size: 1em; }
+    #handlebar .project .tech {
+      color: #999; }
+  #handlebar .project:last-child {
+    padding-right: 0; }
+  #handlebar h2 {
+    width: 100%;
+    text-align: left; }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Roboto", helvetica;
-  font-weight: 600;
-  color: #999;
-  text-align: left; }
+  font-weight: 400;
+  text-align: left;
+  margin: 10px 0; }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-family: "Roboto", helvetica;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0;
   text-align: left;
-  color: #fff; }
-
-.section2 h3 {
-  text-align: center; }
+  color: #999; }
 
 p {
   font-family: "Roboto", helvetica;
   font-weight: 100;
   font-size: 1.1em;
   line-height: 1.457;
-  color: #fff;
   text-align: left; }
-
-#slide12 h3 {
-  /*    width:80%;*/
-  text-align: left; }
-
-.intro p {
-  color: #fff;
-  width: 100%; }
 
 .fa {
   color: #EB3349;
@@ -778,28 +716,5 @@ p {
 
 .social {
   text-align: center; }
-
-.hidden {
-  display: none; }
-
-.story strong {
-  cursor: pointer; }
-
-.slides {
-  display: none; }
-
-figcaption {
-  color: #fff;
-  font-size: .8em;
-  margin-top: 5px; }
-
-figure {
-  margin: 0;
-  padding: 0; }
-
-canvas {
-  display: block;
-  vertical-align: center;
-  height: 100%; }
 
 /*# sourceMappingURL=style.css.map*/

@@ -7,7 +7,7 @@
     @media screen and (max-width: 1300px) { @content; }
   }
   @else if $point == 'tablet' {
-    @media screen and (max-width: 980px) { @content; }
+    @media screen and (max-width: 769px) { @content; }
   }
   @else if $point == 'mobile' {
     @media screen and (max-width: 599px)  { @content; }

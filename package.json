@@ -15,12 +15,15 @@
     "postcss-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "gsap": "^3.6.1",
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1",
-    "typed.js": "^2.0.6"
+    "three": "^0.114.0",
+    "typed.js": "^2.0.11"
   }
 }
