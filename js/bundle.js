@@ -10442,7 +10442,9 @@ return jQuery;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__showProject__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loader__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vhFix__ = __webpack_require__(20);
 __webpack_require__(2);
+
 
 
 
@@ -10450,6 +10452,7 @@ __webpack_require__(2);
 document.addEventListener("DOMContentLoaded", function () {
 	Object(__WEBPACK_IMPORTED_MODULE_0__showProject__["a" /* default */])();
 	Object(__WEBPACK_IMPORTED_MODULE_1__loader__["a" /* default */])();
+	Object(__WEBPACK_IMPORTED_MODULE_2__vhFix__["a" /* default */])();
 });
 
 /***/ }),
@@ -17640,6 +17643,20 @@ ScrollTrigger.sort = function (func) {
 
 _getGSAP() && gsap.registerPlugin(ScrollTrigger);
 
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+    var setFillHeight = function setFillHeight() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+    };
+    window.addEventListener('resize', setFillHeight);
+    setFillHeight();
+});
 
 /***/ })
 /******/ ]);
