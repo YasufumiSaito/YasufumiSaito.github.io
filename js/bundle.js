@@ -17654,7 +17654,12 @@ _getGSAP() && gsap.registerPlugin(ScrollTrigger);
         var vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', vh + 'px');
     };
-    window.addEventListener('resize', setFillHeight);
+    var width = window.innerWidth;
+    window.addEventListener('resize', function () {
+        if (width !== window.innerWidth) {
+            setFillHeight();
+        }
+    });
     setFillHeight();
 });
 
